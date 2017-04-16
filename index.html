@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Tookie - Homepage</title>
+		
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/index.css"/>
+		<script src="jQuery/jQuery.js"></script>
+		
+		<!--To load when users enter the page. Referenced from http://www.htmlite.com/JS006.php-->
+		<script type="text/javascript">
+				var answer = confirm ("Do you believe in time travel?")
+				if (answer)
+				alert ("Welcome to Tookie! Where time travelling is real!")
+				else
+				alert ("Please proceed with caution, your mind might be blown. Time travel is real.")
+		</script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body onload="dateFunction()" > 
+		<div class="login">
+			<ul>
+				<li><a id="date" href="javascript:void(0);" onclick="dateAlert()">date</a></li>
+				<li><a href="members.html">Register</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		
+		<div class="clearfix"></div>
+		
+		<header>
+			<p><a href="index.html"><img src="image/title.png" alt="title" title="tookie"/></a></p>
+			<nav id="myNav" class="nav">
+				<ul>
+					<li class="dropdown"><a href="aboutUs.html">About Us</a>
+						<ul>
+							<li><a href="aboutUs.html">Our Story</a></li>
+							<li><a href="members.html">Time Traveller's Club</a></li>
+						</ul>
+					</li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="shipping.html">Shipping</a></li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+					<li class="icon">
+						<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+			
+		<div id="wrapper">
+			
+			<div class="content">
+				<img src="image/cookie1overlay.jpg" alt="Cookies for Santa"/>
+				<h1>TIME TRAVEL MADE EASY!</h1>
+				<p>Sick of travelling the conventional way? Thinking of changing the bulky time machines for something more inconspicious? Want to add some flavour to your time journey?</p>
+				<p>Here at Tookie&#8482; we can solve all these issues and more for you! Time travelling have never been more fun! Click on <a href="products.html"><b>products</b></a> to learn about our unique time travelling machine!</p>
+			</div>
+			
+			<div class="links">
+				<div class="section">
+					<a href="aboutUs.html"><img src="image/logo.png" alt="logo"/></a>
+					<p>Find out why we're your best choice for time travelling!</p>
+				</div>
+				<div class="section">
+					<a href="products.html"><img src="image/products1.jpg" alt="signature cookie"/></a>
+					<p>Chocolate chip or plain dough? We have both and many more!</p>
+				</div>
+				<div class="section">
+					<a href="offers.html"><img src="image/offers1.jpg" alt="offers"/></a>
+					<p>There is always an offer just for you! Click on to find out more!</p>
+				</div>
+				<div class="section">
+					<a class="card" href="members.html"><img src="image/card.png" alt="member card"/></a>
+					<p>Sick of travelling alone? Join our Time travelling club for exclusive rewards!</p>
+				</div>
+			</div>
+			
+			<div class="clearfix"></div>
+		</div>
+		
+		<footer>
+			<div class="section">
+				<h3>Talk to us!</h3>
+				<p>+000 12 345 6789<br/>
+				99, Time Traveller's Street,<br/>
+				Time Masters Avenue, Gallifrey.</p>
+			</div>
+			<div class="section">
+				<!--From How To Make A Website From Scratch - HTML5/CSS3 Responsive Design Youtube tutorial(Ryan, 2014)-->
+				<h3> Connect with us!</h3>
+				<ul>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/facebook1.png" alt="facebook"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/googleplus.png" alt="googleplus"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/twitter1.png" alt="twitter"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/youtube1.png" alt="youtube"/></a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h3>Domestic Shipping</h3>
+				<p>We ship to every continent! Orders above <b>500 credits</b> will be shipped for free!<br/>
+				Please check out our <a href="shipping.html">shipping</a> page for more information.</p>
+			</div>
+			<div class="section">
+				<h3>Intergalactic Shipping</h3>
+				<p>We ship to every planet! Delivery time might be longer depending on location.<br/>
+				Please check out our <a href="shipping.html">shipping</a> page for more information.</p>
+			</div>
+		</footer>
+		
+		<div class="clearfix"></div>
+		<p class="disclaimer">If you have not noticed, nothing on this site is real. This is a college project, purely for academic purposes only. <a href="biblio.html">Bibliography attached</a></p>
+
+	</body>
+</html>

@@ -1,0 +1,24 @@
+.products a:hover img{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.products img{
+	clear: both;
+	display: block;
+	width: 50%;
+	margin: 1% auto;
+}
+
+.products p{
+	width: 70%;
+	margin: 1% auto;
+	font-size: 200%;
+	text-align: center;
+}
+
+/********************* MEDIA QUERY *****************************/
+@media screen and (max-width:1140px){
+	.products p{
+		font-size: 100%;
+	}
+}

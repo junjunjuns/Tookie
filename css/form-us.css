@@ -1,0 +1,94 @@
+/*Shared between members.html and contactUs.html due to similarities*/
+.feedback form, .content form{
+	margin: 4% auto;
+	width: 80%;
+	padding: 5%;
+	background: rgb(226, 239, 250);
+}
+.field{
+	width: 100%;
+}
+.field input[type=text]{
+	width: 40%;
+	margin: 0 auto;
+	padding: 1%;
+}
+.field textarea{
+	width: 100%;
+}
+.field input{
+	margin: 1% auto;
+}
+.location{
+	width: 40%;
+	margin: 3% auto;
+	text-align: center;
+}
+.content img{
+	height: 40%;
+	width: auto;
+	display: block;
+	margin: 1% auto;
+	background: #FFFFFF;
+}
+.button{
+	padding: 1% 2% 2% 2%;
+}
+
+.para p{
+	width: 90%;
+	margin: 1% auto;
+	font-size: 150%;
+	text-align: left;
+}
+
+.content .benefits{
+	width: 60%;
+	margin: 1% auto;
+	text-align: left;
+}
+
+.content .benefits li{
+	font-size: 150%;
+	margin: 1% auto;
+}
+
+/********************* MEDIA QUERY *****************************/
+@media screen and (max-width:1024px){
+	.content img{
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+	.para p{
+		font-size: 100%;
+	}
+	.content .benefits{
+		width: 80%;
+	}
+	.content .benefits li{
+		font-size: 100%;
+	}
+	.location{
+		width:80%;
+		overflow: hidden;
+		margin: 1% auto;
+	}
+}
+@media screen and (max-width:640px){
+	.feedback, .location{
+		width: 100%;
+		margin: auto;
+	}
+	.location p{
+		font-size: 100%;
+	}
+	.content h1{
+	font-size: 150%;
+	}
+}
+@media screen and (max-width:480px){
+	form p{
+		font-size: 80%;
+	}
+}

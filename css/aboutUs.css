@@ -1,0 +1,46 @@
+.odd_paragrapgh img{
+	width: 48%;
+	height: auto;
+	margin: 1%;
+	float: left;
+}
+.even_paragrapgh img{
+	width: 48%;
+	height: auto;
+	margin: 1%;
+	float: right;
+}
+
+.slogan{
+	display: block;
+	margin: 1% auto;
+}
+
+.slogan p{
+	font-size: 300%;
+	text-align: center;
+	font-weight: bolder;
+}
+h1{
+	border-style: dashed;
+	padding: 1%;
+	background: rgb(226, 239, 250);	
+}
+
+/********************* MEDIA QUERY *****************************/
+@media screen and (max-width:640px){
+	.odd_paragrapgh img, .even_paragrapgh img{
+		width: 100%;
+		height: auto;
+		margin: 1% 0;
+		float: none;
+	}
+	#wrapper p{
+		font-size: 100%;
+	}
+	#wrapper .slogan p{
+		font-size: 200%;
+		text-align: center;
+		font-weight: bolder;
+	}
+}

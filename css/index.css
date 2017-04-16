@@ -1,0 +1,56 @@
+/*The main portion of the page*/
+.content img{
+	height: auto;
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+.content h1{
+	font-size: 300%;
+}
+
+.content p{
+	width: 80%;
+	margin: 3% auto;
+	text-align: justify;
+	font-size: 150%;
+}
+
+/*The links in the .section*/
+.links a{
+	min-height: 300px;
+	display: block;
+}
+.links img{
+	width: 100%;
+	height: 350px;
+	margin: auto;
+}
+.card{
+	width: 125%;
+}
+.links p{
+	text-align: center;
+	margin: 5% auto;
+}
+
+/********************* MEDIA QUERY *****************************/
+@media screen and (max-width:1024px){
+	.links img{
+		height: 200px;
+	}
+	.links a{
+		min-height: 150px;
+	}
+}
+@media screen and (max-width: 740px){
+	.links img{
+		height: auto;
+		width: 80%;
+		margin: 1% auto;
+	}
+	.links a{
+		min-height: auto;
+	}
+}

@@ -1,0 +1,13 @@
+.offers img{
+	float: left;
+	margin: 2%;
+	width: 40%;
+	height: auto;
+}
+
+/********************* MEDIA QUERY *****************************/
+@media screen and (max-width:640px){
+	#wrapper h1{
+		font-size: 150%;
+	}
+}

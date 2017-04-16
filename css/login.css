@@ -1,0 +1,40 @@
+form{
+	margin: 6% 25%;
+	width: 50%;
+	background: rgb(226, 239, 250);
+}
+form a{
+	text-decoration: underline;
+	font-size: 100%;
+}
+form a, p{
+	padding-left: 5%;
+}
+form input{
+	height: 125%;
+}
+.left{
+	float: left;
+	margin-right: 5px;
+}
+.right{
+	float: left;
+	margin-left: 3px;
+}
+.pw{
+	font-size: 100%;
+	padding-right: 8px;
+	float: left;
+}
+.submit{
+	font-size: 100%;
+	font-family: 'Libre Baskerville', Verdana, Tahoma, Arial, serif, sans-serif;
+}
+
+/********************* MEDIA QUERY *****************************/
+@media screen and (max-width:480px){
+	form{
+		width: 80%;
+		margin: 6% auto;
+	}
+}

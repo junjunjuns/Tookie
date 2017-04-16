@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Tookie - Time Traveller's Club</title>
+		
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/form-us.css"/>
+		<script src="jQuery/jQuery.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body onload="dateFunction()"> 
+		<div class="login">
+			<ul>
+				<li><a id="date" href="javascript:void(0);" onclick="dateAlert()">date</a></li>
+				<li><a href="members.html">Register</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		
+		<div class="clearfix"></div>
+		
+		<header>
+			<p><a href="index.html"><img src="image/title.png" alt="title" title="tookie"/></a></p>
+			<nav id="myNav" class="nav">
+				<ul>
+					<li class="dropdown"><a href="aboutUs.html">About Us</a>
+						<ul>
+							<li><a href="aboutUs.html">Our Story</a></li>
+							<li><a href="members.html">Time Traveller's Club</a></li>
+						</ul>
+					</li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="shipping.html">Shipping</a></li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+					<li class="icon">
+						<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+			
+		<div id="wrapper">
+			
+			<div class="content">
+				<h1>Join Today and Never Travel Alone Again!</h1>
+				<img src="image/card.png" alt="member card"/>
+				
+				<div class="para">
+					<p>Drop by our shop today to collect your own exclusive <b>TT Club card</b>! No minimum purchase needed. Just talk to one of our friendly staffs in store and we'll get you all set up!</p>
+					<p>Already a member? Don't forget to register online to activate your account and receive exclusive news and offers and make full use of the points collected!</p>
+				</div>
+				
+				<div class="benefits">
+					<h1>Why Join our <b>Time Traveller's Club</b>?</h1>
+					<ul>
+						<li>Faster delivery</li>
+						<li>Invitation to our exclusive events</li>
+						<li>Special offers and rewards for <b>TT Club</b> members only</li>
+						<li>Collect points with every purchase for more rewards</li>
+					</ul>
+				</div>
+				
+				<form method="post" action="#">
+					<h3>Membership Registration Form:</h3>
+					
+					<div class="field">
+					<p><b>Name:</b></p>
+					<input type="text" name="name" size="20"/>
+					</div>
+					
+					<div class="field">
+					<p><b>Address:</b></p>
+					<input type="text" name="address" size="70"/>
+					</div>
+					
+					<div class="field">
+					<p><b>E-mail:</b></p>
+					<input type="text" name="email" size="40"/>
+					</div>
+					
+					<div class="field">
+					<p><b>Date of Birth:</b></p>
+					<input type="text" name="D.O.B" size="20" value="DD/MM/YY"/>
+					</div>
+					
+					<div class="field">
+					<p><b>Gender:</b></p>
+					<input type="radio" name="gender" value="male"/>Male<br/>
+					<input type="radio" name="gender" value="female"/>Female
+					</div>
+					
+					<div class="field">
+					<p><b>TT Club Card No.:</b></p>
+					<input type="text" name="card_no" size="20"/>
+					</div>
+					
+					<div class="field">
+					<p><b>Do you have a Time Travelling License:</b></p>
+					<input type="checkbox" name="TT License" value="yes"/>Yes<br/>
+					<input type="checkbox" name="TT License" value="no"/>No
+					</div>
+					
+					<div class="field">
+					<p><b>Favourite Cookie:</b></p>
+					<input type="checkbox" name="favourite_cookie" value="Plain Dough"/>Plain Dough<br/>
+					<input type="checkbox" name="favourite_cookie" value="Chocolate Chip"/>Chocolate Chip<br/>
+					<input type="checkbox" name="favourite_cookie" value="Raisins"/>Raisins<br/>
+					<input type="checkbox" name="favourite_cookie" value="Others"/>Others(Please specify: <input type="text" name="fav_cookie" size="20"/>
+					</div>
+					<br/>
+					<div class="field">
+					<input type="checkbox" name="T&C" value="T&C"/>By clicking submit, it means that you agree to our <u>terms and conditions</u><br/>
+					<input type="checkbox" name="offers" value="offers"/>Please tick if you would like to receive emails about our exclusive offers and events
+					</div>
+					
+					<div class="button">
+					<input type = "submit" value = "Submit"/>
+					<input type = "reset" value = "Reset Form" onclick="c_function"/>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<div class="section">
+				<h3>Talk to us!</h3>
+				<p>+000 12 345 6789<br/>
+				99, Time Traveller's Street,<br/>
+				Time Masters Avenue, Gallifrey.</p>
+			</div>
+			<div class="section">
+				<!--From How To Make A Website From Scratch - HTML5/CSS3 Responsive Design Youtube tutorial(Ryan, 2014)-->
+				<h3> Connect with us!</h3>
+				<ul>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/facebook1.png" alt="facebook"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/googleplus.png" alt="googleplus"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/twitter1.png" alt="twitter"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/youtube1.png" alt="youtube"/></a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h3>Domestic Shipping</h3>
+				<p>We ship to every continent! Orders above <b>500 credits</b> will be shipped for free!<br/>
+				Please check out our <a href="shipping.html">shipping</a> page for more information.</p>
+			</div>
+			<div class="section">
+				<h3>Intergalactic Shipping</h3>
+				<p>We ship to every planet! Delivery time might be longer depending on location.<br/>
+				Please check out our <a href="shipping.html">shipping</a> page for more information.</p>
+			</div>
+		</footer>
+		
+		<div class="clearfix"></div>
+		<p class="disclaimer">If you have not noticed, nothing on this site is real. This is a college project, purely for academic purposes only. <a href="biblio.html">Bibliography attached</a></p>
+
+	</body>
+</html>

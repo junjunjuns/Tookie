@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Tookie - Login</title>
+		
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/login.css"/>
+		<script src="jQuery/jQuery.js"></script>
+		
+		<!--To prompt when user clicks on forgot password-->
+		<script>
+			function pw_function(){
+				var person=prompt("Please enter your email and a retrieval link will be sent to you!", " ");
+			}
+		</script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body onload="dateFunction()"> 
+		<div class="login">
+			<ul>
+				<li><a id="date" href="javascript:void(0);" onclick="dateAlert()">date</a></li>
+				<li><a href="members.html">Register</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</div>
+		
+		<div class="clearfix"></div>
+		
+		<header>
+			<p><a href="index.html"><img src="image/title.png" alt="title" title="tookie"/></a></p>
+			<nav id="myNav" class="nav">
+				<ul>
+					<li class="dropdown"><a href="aboutUs.html">About Us</a>
+						<ul>
+							<li><a href="aboutUs.html">Our Story</a></li>
+							<li><a href="members.html">Time Traveller's Club</a></li>
+						</ul>
+					</li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="shipping.html">Shipping</a></li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+					<li class="icon">
+						<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+			
+		<div id="wrapper">
+			
+			<form method="post" action="#">
+				<p class="left"><b>Username: </b></p>
+				<p class="right"><input type="text" name="username" size="20"/></p>
+				<div class="clearfix"></div>
+				<p class="left"><b>Password: </b></p>
+				<p class="right"><input type="text" name="password" size="20"/></p>
+				<div class="clearfix"></div>
+				<a href="#" onclick="pw_function()">Forgot password</a>
+				<input class="submit" type="submit" value="Submit"/>
+			</form>
+		</div>
+			
+		<footer>
+			<div class="section">
+				<h3>Talk to us!</h3>
+				<p>+000 12 345 6789<br/>
+				99, Time Traveller's Street,<br/>
+				Time Masters Avenue, Gallifrey.</p>
+			</div>
+			<div class="section">
+				<!--From How To Make A Website From Scratch - HTML5/CSS3 Responsive Design Youtube tutorial(Ryan, 2014)-->
+				<h3> Connect with us!</h3>
+				<ul>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/facebook1.png" alt="facebook"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/googleplus.png" alt="googleplus"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/twitter1.png" alt="twitter"/></a></li>
+					<li><a href="#"><img src="https://www.w3newbie.com/wp-content/uploads/youtube1.png" alt="youtube"/></a></li>
+				</ul>
+			</div>
+			<div class="section">
+				<h3>Domestic Shipping</h3>
+				<p>We ship to every continent! Orders above <b>500 credits</b> will be shipped for free!<br/>
+				Please check out our <a href="shipping.html">shipping</a> page for more information.</p>
+			</div>
+			<div class="section">
+				<h3>Intergalactic Shipping</h3>
+				<p>We ship to every planet! Delivery time might be longer depending on location.<br/>
+				Please check out our <a href="shipping.html">shipping</a> page for more information.</p>
+			</div>
+		</footer>
+		
+		<div class="clearfix"></div>
+		<p class="disclaimer">If you have not noticed, nothing on this site is real. This is a college project, purely for academic purposes only. <a href="biblio.html">Bibliography attached</a></p>
+
+	</body>
+</html>

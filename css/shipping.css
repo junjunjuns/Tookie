@@ -1,0 +1,58 @@
+#wrapper{
+	padding: 2%;
+}
+table{
+	width: 75%;
+	margin: 5% auto;
+	border: 3px solid #636E93;
+}
+table th{
+	font-family: 'Bungee', cursive, Verdana, Tahoma, Arial, serif, sans-serif;
+	text-align: center;
+	background: #B6C5F5;
+	font-size: 150%;
+}
+
+table td{
+	font-family: 'Libre Baskerville', Verdana, Tahoma, Arial, serif, sans-serif;
+	text-align: center;
+	font-size: 100%;
+	background: #D3DCF7;
+}
+.planet{
+	font-family: 'Bungee', cursive, Verdana, Tahoma, Arial, serif, sans-serif;
+	text-align: center;
+	font-size:125%;
+}
+.location{
+	text-align: center;
+	font-weight: bold;
+}
+/*****************************MEDIA QUERY************************************/
+@media screen and (max-width:980px){
+	table{
+		width: 90%;
+		overflow: hidden;
+	}
+	table th, .planet{
+		font-size: 100%
+	}
+	table td{
+		font-size: 60%;
+	}
+}
+@media screen and (max-width:480px){
+	table{
+	width: 100%;
+	border: 1px solid #636E93;
+	overflow: hidden;
+	}
+	table th, .planet{
+		font-family: 'Libre Baskerville', Verdana, Tahoma, Arial, serif, sans-serif;
+		font-weight: bold;
+		font-size: 60%
+	}
+	table td{
+		font-size: 40%;
+	}
+}
